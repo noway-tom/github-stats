@@ -50,6 +50,11 @@ jobs:
         # https://github.com/orgs/community/discussions/192970
         MAX_RETRIES: 5
 
+    - name: Customize image titles
+      run: |
+        sed -i "s/noway-tom's Github Stats/github stats/g" overview.svg
+        sed -i "s/Languages USed (By File Size)/languages/g" languages.svg
+
     - name: Commit to the repo
       run: |
         git add .

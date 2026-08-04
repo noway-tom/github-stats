@@ -52,8 +52,8 @@ jobs:
 
     - name: Customize image titles
       run: |
-        sed -i "s/noway-tom's Github Stats/github stats/g" overview.svg
-        sed -i "s/Languages USed (By File Size)/languages/g" languages.svg
+        sed -i "s/noway-tom's GitHub Stats/github stats/g" overview.svg
+        sed -i "s/Languages Used (By File Size)/languages/g" languages.svg
 
     - name: Commit to the repo
       run: |
